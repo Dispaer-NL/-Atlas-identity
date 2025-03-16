@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Identity</title>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <form id="register">
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card-heading">
+                        <h2 class="title">Atlas Identity</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row">
+                                    <div class="input-group-desc">
+                                        <input class="input--style-5" type="text" id="firstname" name="first_name">
+                                        <label class="label--desc">First name</label>
+                                    </div>
+                                    <div class="input-group-desc">
+                                        <input class="input--style-5" type="text" id="lastname" name="last_name">
+                                        <label class="label--desc">Last name</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Birthday</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="dateofbirth" name="dateofbirth">
+                                    <label class="label--desc">Example: 01/01/2020</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Height</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="height" name="height">
+                                    <label class="label--desc">Example: 140-200cm</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Gender</div>
+                            <div class="value">
+                                <div class="gender-selection">
+                                    <label class="radio-container">
+                                        Male
+                                        <input type="checkbox" class="sex" value="m" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radio-container">
+                                        Female
+                                        <input type="checkbox" class="sex" value="f">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row" style="justify-content: center;">
+                            <button class="btn btn--radius-2" type="submit">Create Character</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+        $('input[type="checkbox"]').on('change', function() {
+            $('input[type="checkbox"]').not(this).prop('checked', false);
+        });
+    </script>
+</body>
+</html>
