@@ -34,7 +34,3 @@ Customize the identity system via **config.lua**, including:
 
 For assistance, feature requests, or bug reports, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
